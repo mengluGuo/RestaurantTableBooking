@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Booking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+</head>
+<body onload="bookingReference()" class="bg-light">
+    <div class="container">
+        <div class="page-header">
+            <h3>Choose your booking options</h3>
+        </div>
+        <h4><img src="spoon.png" class="img-fluid"> East-Wind Edinburgh</h4>
+        <p>Designer Outlet Center<br />Almondvale Ave<br />Livingston</p>
+
+        <div class="row">
+            <div class="col-sm">
+                <select class="numberOfPeople">
+                    <option value="1">1 people</option>
+                    <option value="2" selected="selected">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                </select>
+
+                <select class="meal">
+                    <option value="lunch">lunch</option>
+                    <option value="dinner" selected="selected">dinner</option>
+                </select>
+
+                <!--set up bootstrap-datepicker-->
+                <form id="eventForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-5 date">
+                            <div id="embeddingDatePicker"></div>
+                            <input type="hidden" id="selectedDate" name="selectedDate" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Select an option below:</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h4 class="card-title">Standard Menu</h4>
+                                    <a href="#" class="btn btn-primary">Book</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 class="card-title">15% off Night Owl Offer</h4>
+                                    <p class="card-text">This offer is available from March 21, 2018 until July 31, 2018, subject to availability as displayed in the booking interface. Not available in conjunction with other offers. Offer excludes service.</p>
+                                    <a href="#" class="btn btn-primary">Book</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+</body>
+</html>
