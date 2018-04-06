@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Booking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCSS/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="page-header">
+            <h3>Enter your details</h3>
+        </div>
+        <h4><img src="images/contact.png" class="img-fluid"> Your contact details</h4>
+        <form>
+            <div class="form-row">
+                <select id="title">
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="doctor">Doctor</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name">First name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="e.g. John, Ingrid etc.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="e.g. Smith, Patel etc.">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="e.g. john@bookatable.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="number" class="form-control" id="phone" placeholder="e.g. 07000 000000">
+            </div>
+
+            <a id="submit" class="btn btn-primary" href="check_confirm.html">Continue Booking</a>
+        </form>
+    </div>
+<script src="myJS/enter_details.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--<script src="http://chancejs.com/chance.min.js"></script>-->
+</body>
+</html>

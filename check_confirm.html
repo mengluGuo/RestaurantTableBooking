@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Booking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCSS/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="page-header">
+            <h3>Please check your booking details and confirm</h3>
+        </div>
+        <h4><img src="images/calendar.png" class="img-fluid"> Nearly done! Check and complete</h4>
+        <p>Please check that the following details are correct before complete your booking.</p>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Your contact details</h4>
+                    </div>
+                    <div id="contact-details" class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Your booking details</h4>
+                            </div>
+                            <div id="booking-details" class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Add special request (optional)</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Please enter any additional requests or information that you wish to notify the restaurant about:</p>
+                                <textarea id="special-request" class="form-control" placeholder="Type in your message" rows="5" maxlength="200"></textarea>
+                                <h6 class="pull-left" id="count_message"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>By completing this booking you are also agreeing to accept the Terms and Conditions associated with it.</p>
+                    </div>
+                    <div class="col-md-3 ml-md-auto">
+                        <a id="submit" class="btn btn-primary btn-sx" href="#">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="myJS/check_confirm.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--<script src="http://chancejs.com/chance.min.js"></script>-->
+</body>
+</html>

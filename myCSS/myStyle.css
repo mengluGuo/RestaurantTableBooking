@@ -1,0 +1,8 @@
+.is-grouped > .a:not(:last-child) {
+    margin-right: 100px;
+}
+
+.checkbox-warning-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+    border-color: #FF8800;
+    background-color: #FF8800;
+}

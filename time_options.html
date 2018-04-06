@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Booking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCSS/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="page-header">
+        <h3>Choose a time</h3>
+    </div>
+    <h4><img src="images/clock.png" class="img-fluid"> East-Wind Edinburgh</h4>
+    <p id="bookingInfo">...</p>
+
+    <div class="card">
+        <div class="card-header">
+            <h4>Select an booking option:</h4>
+        </div>
+        <div id="option-group" class="card-body">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h4>Select an dining time:</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div id="time_options" class="is-grouped">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <p><br/><img src="images/info.png" class="img-fluid"> Your table will only be held for 15 minutes. After this time you may have to wait for another table to become available.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--<script src="myJS/booking_option.js"></script>-->
+<script src="myJS/time_option.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--<script src="http://chancejs.com/chance.min.js"></script>-->
+</body>
+</html>
